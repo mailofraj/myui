@@ -1,0 +1,88 @@
+<div class="container">
+<form id="adduser">
+  <div class="row">
+    <div class="col-md-2">
+      <label>First name:</label>
+    </div>
+    <div class="col-md-2">
+      <input type="text" id="fname">
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+      <div class="col-md-2">
+        <label>Last name:</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" id="lname">
+      </div>
+  </div>
+  <br/>
+  <div class="row">
+      <div class="col-md-2">
+        <label>Employee Id:</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" id="eid">
+      </div>
+  </div>
+  <br/>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="btn btn-outline-secondary btn-sm" type="button" (click)="addUser()">Add</button>
+                 
+          <button class="btn btn-outline-secondary btn-sm" type="button">Reset</button>
+        </div>
+      </div>
+  </div>
+</form>
+<label>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</label>
+<form id="listuserheader">
+
+<div class="row">
+  <div class="col-md-3">
+    <input type="text" placeholder="search">
+  </div>
+  <div class="col-md-2">
+    <label>Sort by:</label>
+  </div>
+  <div class="col-md-1">
+      <button class="btn btn-outline-secondary btn-sm" type="button">First name</button>
+  </div>
+  <div class="col-md-1">
+      <button class="btn btn-outline-secondary btn-sm" type="button">Last name</button>
+  </div>
+  <div class="col-md-1">
+      <button class="btn btn-outline-secondary btn-sm" type="button">ID</button>
+  </div>
+</div>
+
+</form>
+<br/>
+<form id="listuserdetail">
+    <div class="row">
+        <div class="col-md-2">
+            <textarea rows="2" id="fnamelist"></textarea>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-outline-secondary btn-sm" type="button">Edit</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <textarea rows="2" id="lnamelist"></textarea>  
+        </div> 
+        <div class="col-md-2">
+            <button class="btn btn-outline-secondary btn-sm" type="button">Delete</button>
+        </div>
+    </div> 
+    <div class="row">
+      <div class="col-md-12">
+      <textarea rows="2" id="idlist"></textarea>  
+      </div>
+    </div>   
+
+</form>
+</div>
