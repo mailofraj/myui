@@ -22,10 +22,10 @@
      <br/>
       <tr><td>User :</td><td><input type = "text" name = "username"  ngModel></td> 
       <br/>
-      <td><button class="btn btn-outline-secondary" type="button">Search</button></td> </tr>
+      <td><button class="btn btn-outline-secondary" (click)="onSearch()" type="button">Search</button></td> </tr>
       <br/> 
       <tr><td>
-          <input type = "submit" (ngSubmit) = "onClickSubmit(userlogin.value)" value = "Add"></td>
+          <input type = "submit" (click) = "addTask()" value = "Add"></td>
           <td><input type = "submit" value = "Reset">
         </td>   
       </tr>

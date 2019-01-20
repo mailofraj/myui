@@ -8,6 +8,9 @@ import { PmaddtaskComponent } from './pmaddtask/pmaddtask.component';
 import { PmadduserComponent } from './pmadduser/pmadduser.component';
 import { PmaddprjComponent } from './pmaddprj/pmaddprj.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { FilteruserPipe } from './pmadduser/filteruser.pipe';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +18,14 @@ import { HttpClientModule } from '@angular/common/http';
     PmviewtaskComponent,
     PmaddtaskComponent,
     PmadduserComponent,
+    FilteruserPipe,
     PmaddprjComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

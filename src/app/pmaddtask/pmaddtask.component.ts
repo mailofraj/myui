@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pmaddtask.component.scss']
 })
 export class PmaddtaskComponent implements OnInit {
+  
+  priority = '';
+  startDate = '';
+  endDate= '';
+  user='';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addTask(){
+
   }
 
 }
